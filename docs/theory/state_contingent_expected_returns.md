@@ -39,6 +39,28 @@ Asset Pricing Models remove some of the subjective issues involved in the estima
 * **perfect information**: assumes that all investors have the access to the same information. 
 * **efficient markets**: all information is immediately reflected in the prices of securities.
 
+**Generalised Asset Pricing Model**
+$$
+    E[r_{jt}] = \alpha + \beta_{j}F_t + \epsilon_t
+$$
+
+**where**:
+
+$E[r_{jt}]$ = Expected return on a stock j at time t
+
+$F_t$ = Factor that impacts the expected return of j at time t
+
+$\alpha$ = Intercept term (value of $E[r_j]$ when F = 0)
+
+$\beta_j$ = Slope (impact of expected return when F changes)
+
+
+**Capital Asset Pricing Model (CAPM)**
+
+In CAPM, the return of an asset is solely based on its relationship with the market (JSE, NYSE, etc). This model will ignore other sentimental influences such as - asset culture, values, prospects or any other asset specific element that relies on "feelings".The model simply relies on the "power of diversification". The CAPM is interested in the expected return and excess return, which is the additional return that you get above the risk free return. Simply, the return you get for taking risk. 
+
+$\alpha$ and $\epsilon_t$ are set to zero because the CAPM model says that the expected return is dependent on the assets relationship with the market. 
+
 
 $$
     E[r_j] = r_f + \beta_j(E[r_m] - r_f )
@@ -49,6 +71,35 @@ $E[r_jt]$ = Expected return on a stock j
 
 $E[r_m]$ = Expected return on the market
 
-$r_f$ = Risk free rate (e.g. Yield of T-bills or T-bonds)
+$r_f$ = Risk free rate (e.g. Yield of Treasury bills or Treasury bonds)
 
 $\beta_j$ = Systematic risk (market risk) of stock j
+
+Other AP models work on the assumption that a stock's return is impacted by 2 or more factors and not just the market portfolio. Look up the **Arbitrage Pricing Theory for AP models** - think of it is as a multi-linear regression (return) model. 
+
+Other multi-factor models
+
+- Fama French 3 Factor Model - stock returns are affected by the following factors
+    - market portfolio
+    - size of the firm
+    - value vs growth firm
+
+$$
+    E[r_j] = r_f + \beta_j(E[r_m] - r_f ) + \beta_{2}SMB + \beta_{3}HML
+$$
+**Where**:
+SMB = Returns of small firms minus returns of big firms ('size factor')
+HML = Returns of high book-to-market ("value") firms minus returns of low book-to-market ("growth") firms ("value premium")
+
+- Cahart 4 Factor Model
+The 4-factor model is just addition to the 3-factor model
+$$
+    E[r_j] = r_f + \beta_j(E[r_m] - r_f ) + \beta_{2}SMB + \beta_{3}HML + \beta_{4}GP
+$$
+**Where**:
+WML = Returns "winner" firms minus returns of "loser" firms (momentum portfolio / factor , aka MOM factor) 
+
+- Fama French 5 Factor Model 
+
+Calculates the return by taking into account company profitability (gross profitability)
+
