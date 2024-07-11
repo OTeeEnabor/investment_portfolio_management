@@ -1,0 +1,13 @@
+absl-py==2.0.0
+et-xmlfile==1.1.0
+numpy==1.26.1
+openpyxl==3.1.2
+ortools==9.7.2996
+pandas==2.1.2
+ply==3.11
+protobuf==4.24.4
+Pyomo==6.6.2
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
