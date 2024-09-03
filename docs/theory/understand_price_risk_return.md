@@ -34,6 +34,39 @@ There are two stocks that have identical returns - `x%`, however they have diffe
 
 I think that the stock with the higher risk should have a lower price because it does not make sense for me to `bet` on a riskier asset when I get no advantage from taking on the risk - i.e, same expected return. 
 
-*Riskier assets are **worth** less than safer assets.*
+*Riskier assets are **worth** less than safer assets and vice versa.*
+## Important Relationships 
+Value and risk are have a negative correlation relationship - as risk increases, the value of  asset should decrease. 
+
+Risk and return (expected) have a proportional relationship, as risk increases, **expected return** should increase - proportionally - positive correlation
 
 **keywords**: price convergence
+
+# What is Shorting?
+Selling an asset that **you do not own** and buying it back when the price decreases. The difference between the sell amount and buy back amount is profit. 
+
+Borrow the shares from broker, then sell them at the current price, when share price decreases, buy them back at lower price, return them to the broker, pay interest on loan, profit the rest.
+Risks involved - price of share could increase to infinity therefore you would have to buy back the shares at this infinity price. simply put there is no upper bound to how much you can lose when shorting.
+
+# Calculating Stock Returns
+Is there a difference between profit and returns? or are they the same thing expressed in **different units**?
+
+**profit without dividends**
+
+$Profit = P_{t+1} - P_{t}$
+
+$return (r) = \frac{P_{t+1} - P_{t}}{P_{t}} \equiv \frac{P_{t+1} }{P_{t}} - 1$
+
+
+**Profit with dividends**
+
+$profit = SellingPrice + Dividends - PurchasePrice$
+
+**return with dividends**
+
+$r = \frac{P_{t+1} + Div_{t+1} - P_{t}}{P_{t}} \equiv \frac{P_{t+1} + Div_{t+1}}{P_{t}} - 1$
+
+
+
+
+
